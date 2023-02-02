@@ -1,0 +1,21 @@
+:root {
+    --primary: #000;
+    --secondary: #0E0E0E;
+    --tertiary: #262626;
+    
+    --color: #fff;
+    --colorSec: #9c9c9c;
+    --purple: #791DDC;
+}
+
+* {
+    font-family: Hellix,helvetica,arial,sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--color);
+}

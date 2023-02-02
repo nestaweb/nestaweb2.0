@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    padding: 4vw 5vw;
+    background-image: url("../assets/heroHeader.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div#heroContainer {
+    max-width: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+header div#heroContainer h1#heroTitle {
+    font-size: 7rem;
+}
+
+header div#heroContainer p.subtitle {
+    color: var(--colorSec);
+    width: 70%;
+}
+
+header div#heroContainer button#heroCTA {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
