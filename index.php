@@ -22,6 +22,7 @@
                 <p class="subtitle">Étudiant à l'école <span class="link" id="42">42 angoulême</span>. Développeur web indépendant depuis plus de 2 ans. Reconnu à travers +10 projets.</p>
                 <button id="heroCTA" class="cta">Prendre RDV</button>
             </div>
+            <button id="goToMain"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 29 13.8 18.8l.8-.8 9.4 9.4 9.4-9.4.8.8Z"/></svg></button>
         </header>
         <main>
             

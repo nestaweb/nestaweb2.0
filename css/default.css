@@ -6,6 +6,7 @@
     --color: #fff;
     --colorSec: #9c9c9c;
     --purple: #791DDC;
+    --blue: #1f8fff;
 }
 
 * {
@@ -18,4 +19,61 @@
 body {
     background-color: var(--secondary);
     color: var(--color);
+}
+
+span.link {
+    text-decoration: underline;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav#topNavBar {
+    position: fixed;
+    display: flex;
+    left: 2.5vw;
+    height: 10vh;
+    top: 2vw;
+    width: 95vw;
+    justify-content: space-between;
+}
+
+nav#topNavBar div#websiteName {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav#topNavBar div#websiteName img {
+    height: 40%;
+}
+
+nav#topNavBar div#websiteName p {
+    font-size: 160%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+nav#topNavBar ul.listNavItems {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 5vw;
+}
+
+nav#topNavBar ul.listNavItems li {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 80%;
+}
+
+nav#topNavBar ul.listNavItems button.cta {
+    padding: 0.75vw 1.5vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 80%;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
 }
