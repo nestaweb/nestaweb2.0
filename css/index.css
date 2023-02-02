@@ -5,10 +5,12 @@ header {
     height: 100vh;
     width: 100vw;
     padding: 4vw 5vw;
-    background-image: url("../assets/heroHeader.webp");
+    background-image: url("../assets/heroHeaderMobile.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
 }
 
 header div#heroContainer {
@@ -26,17 +28,11 @@ header div#heroContainer h1#heroTitle {
 }
 
 header div#heroContainer p.subtitle {
-    color: var(--colorSec);
     width: 70%;
 }
 
 header div#heroContainer button#heroCTA {
-    padding: 1vw 2vw;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
+    font-size: 90%;
 }
 
 header button#goToMain {
@@ -56,4 +52,61 @@ main {
     height: 200vh;
     width: 100vw;
     background-color: var(--secondary);
+    z-index: 100;
+    position: relative;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    gap: 5vw;
+}
+
+section.infoSection {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+section.infoSection div.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2vw;
+}
+
+section.infoSection div.textContainer h1.titleTextContainer {
+    font-size: 4rem;
+}
+
+section.infoSection div.textContainer div.subTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+section.infoSection div.textContainer div.subTextContainer p.subtitle {
+    margin-top: 2%;
+}
+
+section.infoSection div.textContainer button.cta {
+    width: fit-content;
+}
+
+section.infoSection div.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+section.infoSection div.imgContainer svg {
+    fill: var(--purple);
+    width: 60%;
+    height: 60%;
+}
+
+section.infoSection.reverse {
+    flex-direction: row-reverse;
 }

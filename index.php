@@ -19,13 +19,48 @@
         <header>
             <div id="heroContainer">
                 <h1 id="heroTitle">Nestaweb,<br>de l'Art au Code</h1>
-                <p class="subtitle">Étudiant à l'école <span class="link" id="42">42 angoulême</span>. Développeur web indépendant depuis plus de 2 ans. Reconnu à travers +10 projets.</p>
+                <p class="subtitle headerSubtitle">Étudiant à l'école 42 angoulême. Développeur web indépendant<br> depuis plus de 2 ans. Reconnu à travers +10 projets.</p>
                 <button id="heroCTA" class="cta">Prendre RDV</button>
             </div>
             <button id="goToMain"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 29 13.8 18.8l.8-.8 9.4 9.4 9.4-9.4.8.8Z"/></svg></button>
         </header>
         <main>
-            
+            <section class="infoSection">
+                <div class="textContainer">
+                    <h1 class="titleTextContainer">Pourquoi moi ?</h1>
+                    <div class="subTextContainer">
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
+                    </div>
+                    <button class="cta secondary">En savoir plus</button>
+                </div>
+                <div class="imgContainer"></div>
+            </section>
+            <section class="infoSection reverse">
+                <div class="textContainer">
+                    <h1 class="titleTextContainer">Pourquoi moi ?</h1>
+                    <div class="subTextContainer">
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
+                    </div>
+                    <button class="cta secondary">En savoir plus</button>
+                </div>
+                <div class="imgContainer"></div>
+            </section>
+            <section class="infoSection">
+                <div class="textContainer">
+                    <h1 class="titleTextContainer">Pourquoi moi ?</h1>
+                    <div class="subTextContainer">
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
+                    </div>
+                    <button class="cta secondary">En savoir plus</button>
+                </div>
+                <div class="imgContainer"></div>
+            </section>
         </main>
         <footer>
             
