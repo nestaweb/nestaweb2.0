@@ -15,7 +15,7 @@
         <link rel='stylesheet' href='../css/pricing.css'>
     </head>
     <body>
-        <div id="transition"></div>
+        <?php include_once "../components/transition.php" ?>
         <?php include_once "../components/navbar.php" ?>
         <header>
             <div id="heroContainer">

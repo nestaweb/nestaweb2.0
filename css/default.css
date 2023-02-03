@@ -32,6 +32,7 @@ body {
 }
 
 div#transition {
+    display: flex;
     width: 100vw;
     height: 100vh;
     left: 0vw;
@@ -39,6 +40,9 @@ div#transition {
     z-index: 100000;
     position: fixed;
     transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 
 div#transition.transitionning {
