@@ -66,3 +66,25 @@ portfoliosWebsites.forEach(website => {
 document.getElementById("goToMain").addEventListener("click", function(){
   window.scrollTo(0, document.querySelector("header").clientHeight) ;
 })
+
+if (document.getElementById("cv")) {
+  document.getElementById("cv").addEventListener("click", function(){
+    window.open("../assets/CV Nesta Loisy.pdf", "_blank");
+  })
+}
+
+let networks = Array.from(document.querySelectorAll(".network"));
+
+networks.forEach(network => {
+  nsvg = network.childNodes[0];
+  nsvg.addEventListener("click", function(e){
+    id = e.srcElement.parentNode.id;
+    if (id == "instagram") {
+      window.open("https://www.instagram.com/nesta.web/", "_blank");
+    }else if (id == "github") {
+      window.open("https://github.com/nestaweb", "_blank");
+    }else if (id == "linkedin") {
+      window.open("https://www.linkedin.com/in/nesta-loisy-99026924a", "_blank");
+    }
+  })
+});

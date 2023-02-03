@@ -33,7 +33,7 @@
                         <p class="subtitle">Toutes ces expériences m'ont permis d'en apprendre beaucoup sur le web mais aussi sur la gestion de projet et la relation client.</p>
                         <p class="subtitle">Je suis maintenant étudiant à l'école 42 à Angoulême d'oû je souhaite poursuivre une spécialité en I.A., en base de données et en développement web.</p>
                     </div>
-                    <button class="cta secondary">Telecharger mon cv</button>
+                    <button class="cta secondary" id="cv">Telecharger mon cv</button>
                 </div>
                 <div class="imgContainer"></div>
             </section>
