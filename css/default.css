@@ -68,15 +68,18 @@ nav#topNavBar div#websiteName {
     height: 100%;
 }
 
-nav#topNavBar div#websiteName img {
-    height: 40%;
-}
-
 nav#topNavBar div#websiteName p {
     font-size: 160%;
     margin-left: 10%;
     font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
+
+nav#topNavBar.black div#websiteName p {
+    color: var(--primary);
+}
+
 
 nav#topNavBar ul.listNavItems {
     display: flex;
@@ -101,6 +104,15 @@ nav#topNavBar ul.listNavItems li {
     transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+nav#topNavBar.black ul.listNavItems li {
+    color: var(--primary);
+    background: linear-gradient(to left, #000000, #000000);
+    background-position: 0% 100%;
+    background-size: 0% 5%;
+    background-repeat: no-repeat;
+    transition: color 0.3s ease-in-out;
+}
+
 nav#topNavBar ul.listNavItems li:hover {
     background-size: 100% 5%;
 }
@@ -113,14 +125,32 @@ button.cta {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.75px;
-    background-color: var(--color);
+    background: var(--color);
     white-space: nowrap;
     color: var(--primary);
+    transition: color 0.3s ease-in-out;
+    transition: padding 500ms cubic-bezier(.43,.07,.1,.98), color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
+
+nav#topNavBar.black ul.listNavItems button.cta {
+    background: var(--tertiary);
+    color: var(--color);
+}
+
+button.ctaNav:hover {
+    padding: 1vw 3vw;
+}
+
 
 button.cta.secondary {
     background-color: var(--tertiary);
     color: var(--color);
+    transition: all 0.3s ease-in-out;
+}
+
+button.cta.secondary:hover {
+    background-color: var(--color);
+    color: var(--tertiary);
 }
 
 p.subtitle {

@@ -1,6 +1,6 @@
 const heroTitle = document.querySelector("#heroTitle");
 const heroSub = document.querySelector(".headerSubtitle");
-const textheroCTA = document.querySelector("#heroCTA");
+const textheroCTA = document.querySelector(".heroCTA");
  
 function setTranslate(xPos, yPos, el) {
  el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
@@ -46,3 +46,19 @@ for(const star of document.getElementsByClassName("magic-star")) {
     setInterval(() => animate(star), 1000);
   }, index++ * (interval / 3))
 }
+
+
+let portfoliosWebsites = Array.from(document.querySelectorAll(".portfolioEx"));
+
+portfoliosWebsites.forEach(website => {
+  website.addEventListener("click", function(e) {
+      id = e.srcElement.id;
+      document.querySelector("#transitionPortfolioImg").classList.add("hover");
+      setTimeout(() => {
+        document.getElementById("imgWebsiteExample").style.backgroundImage = `url("./assets/portfolio/${id}.webp")`
+      }, 800);
+      setTimeout(() => {
+        document.querySelector("#transitionPortfolioImg").classList.remove("hover");
+      },900);
+  })
+});

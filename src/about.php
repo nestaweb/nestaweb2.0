@@ -28,9 +28,10 @@
                 <div class="textContainer">
                     <h1 class="titleTextContainer">Qui suis-je ?</h1>
                     <div class="subTextContainer">
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
+                        <p class="subtitle">Jeune développeur web, je me suis lancé dans ce monde en 2018. Très vite j'ai été passioné par cette discipline en contante évolution.</p>
+                        <p class="subtitle">J'ai commencé à coder des petits site puis j'ai évolué jusqu'à opérer en entreprise pour divers projets tel qu'une application mobile, un support de formation ou encode des sites vitrines. </p>
+                        <p class="subtitle">Toutes ces expériences m'ont permis d'en apprendre beaucoup sur le web mais aussi sur la gestion de projet et la relation client.</p>
+                        <p class="subtitle">Je suis maintenant étudiant à l'école 42 à Angoulême d'oû je souhaite poursuivre une spécialité en I.A., en base de données et en développement web.</p>
                     </div>
                     <button class="cta secondary">Telecharger mon cv</button>
                 </div>
@@ -41,11 +42,8 @@
                 <div class="textContainer">
                     <h1 class="titleTextContainer">42 Angoulême</h1>
                     <div class="subTextContainer">
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
                     </div>
-                    <button class="cta secondary">En savoir plus</button>
+                    <button class="cta secondary linkNav" id="42">En savoir plus</button>
                 </div>
                 <div class="imgContainer" id="school42Img"></div>
             </section>
