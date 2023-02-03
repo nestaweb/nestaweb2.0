@@ -14,6 +14,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +29,6 @@ div#transition {
     height: 100vh;
     left: 0vw;
     background-color: var(--secondary);
-    /* background: linear-gradient(to top left, var(--secondary), var(--tertiary)); */
     z-index: 100000;
     position: fixed;
     transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
@@ -171,4 +171,5 @@ main {
     flex-direction: column;
     padding-top: 5%;
     gap: 5vw;
+    padding-bottom: 5%;
 }

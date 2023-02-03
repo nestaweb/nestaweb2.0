@@ -47,3 +47,41 @@ section.infoSection div.imgContainer {
     background-position: center;
     background-size: cover;
 }
+
+section.infoSection div.imgContainer#school42Img {
+    background-image: url("../assets/42SchoolImgRound.webp");
+}
+
+section.infoSection.reverse {
+    flex-direction: row-reverse;
+}
+
+section#networks {
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section#networks div.network {
+    display: flex;
+    justify-content: center;
+}
+
+section#networks div.network svg {
+    fill: var(--color);
+    width: 15%;
+}
+
+div#School42 {
+    display: flex;
+    width: 70vw;
+    height: 30vh;
+    margin: 5% auto;
+    background-image: url("../assets/42angouleme.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
