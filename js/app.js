@@ -62,3 +62,7 @@ portfoliosWebsites.forEach(website => {
       },900);
   })
 });
+
+document.getElementById("goToMain").addEventListener("click", function(){
+  window.scrollTo(0, document.querySelector("header").clientHeight) ;
+})

@@ -38,7 +38,6 @@ function outTransition() {
 }
 
 if ((window.location.href).split("/")[(window.location.href).split("/").length - 1] == "pricing.php") {
-    console.log(document.querySelector("header").clientHeight);
     window.addEventListener("scroll", function(){
         if (window.scrollY >= document.querySelector("header").clientHeight - 50) {
             document.getElementById("topNavBar").classList.add("black");
