@@ -16,8 +16,10 @@ function scrollLoop() {
   yScrollPosition = window.pageYOffset;
  
   setTranslate(0, yScrollPosition * -0.2, heroTitle);
-  setTranslate(0, yScrollPosition * -0.2, heroSub);
-  setTranslate(0, yScrollPosition * -0.2, textheroCTA);
+  if (heroSub && textheroCTA) {
+    setTranslate(0, yScrollPosition * -0.2, heroSub);
+    setTranslate(0, yScrollPosition * -0.2, textheroCTA);
+  }
  
   requestAnimationFrame(scrollLoop);
 }

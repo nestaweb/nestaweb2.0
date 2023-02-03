@@ -1,13 +1,5 @@
 header {
-    background-image: url("../assets/heroHeader3.webp");
-}
-
-header div#heroContainer p.subtitle {
-    width: 70%;
-}
-
-header div#heroContainer button#heroCTA {
-    font-size: 90%;
+    background-image: url("../assets/heroHeader2.webp");
 }
 
 section.infoSection {
@@ -44,12 +36,14 @@ section.infoSection div.textContainer button.cta {
 }
 
 section.infoSection div.imgContainer {
-    width: 40%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-section.infoSection.reverse {
-    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-image: url("../assets/me.webp");
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
 }

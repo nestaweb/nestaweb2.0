@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: Hellix,helvetica,arial,sans-serif;
+    font-family: Hellix,helvetica, arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -19,6 +19,23 @@
 body {
     background-color: var(--secondary);
     color: var(--color);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+div#transition {
+    width: 100vw;
+    height: 100vh;
+    left: 0vw;
+    background-color: var(--secondary);
+    /* background: linear-gradient(to top left, var(--secondary), var(--tertiary)); */
+    z-index: 100000;
+    position: fixed;
+    transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+}
+
+div#transition.transitionning {
+    left: 100vw;
 }
 
 span.link {
@@ -101,4 +118,57 @@ button.cta.secondary {
 
 p.subtitle {
     color: var(--colorSec);
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    padding: 4vw 5vw;
+    background-image: url("../assets/heroHeader1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+header div#heroContainer {
+    max-width: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+header div#heroContainer h1#heroTitle {
+    font-size: 7rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+header button#goToMain {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    bottom: 40px;
+    background-color: var(--color);
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+main {
+    width: 100vw;
+    background-color: var(--secondary);
+    z-index: 100;
+    position: relative;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    gap: 5vw;
 }

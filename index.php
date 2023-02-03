@@ -15,6 +15,7 @@
         <link rel='stylesheet' href='./css/index.css'>
     </head>
     <body>
+        <div id="transition"></div>
         <?php include_once "./components/navbar.php" ?>
         <header>
             <div id="heroContainer">
@@ -39,7 +40,7 @@
             </section>
             <section class="infoSection reverse">
                 <div class="textContainer">
-                    <h1 class="titleTextContainer">Pourquoi moi ?</h1>
+                    <h1 class="titleTextContainer">Mes études</h1>
                     <div class="subTextContainer">
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
@@ -51,7 +52,7 @@
             </section>
             <section class="infoSection">
                 <div class="textContainer">
-                    <h1 class="titleTextContainer">Pourquoi moi ?</h1>
+                    <h1 class="titleTextContainer">Mes projets</h1>
                     <div class="subTextContainer">
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
@@ -66,5 +67,6 @@
             
         </footer>
         <script src='./js/app.js'></script>
+        <script src='./js/nav.js'></script>
     </body>
 <html>
