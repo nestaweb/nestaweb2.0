@@ -30,6 +30,10 @@
                 <div class="textContainer">
                     <h1 class="titleTextContainer">Pourquoi moi ?</h1>
                     <div class="subTextContainer">
+                        suivi regulier
+                        made in france
+                        Livraison rapide
+                        Tarif competitif
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, numquam deleniti? Natus tempore earum corrupti.</p>
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit earum.</p>
                         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam delectus, deleniti, dolor ipsam totam sapiente.</p>
@@ -61,6 +65,9 @@
                     <button class="cta secondary">En savoir plus</button>
                 </div>
                 <div class="imgContainer"></div>
+            </section>
+            <section id="opinions">
+                avis
             </section>
         </main>
         <footer>

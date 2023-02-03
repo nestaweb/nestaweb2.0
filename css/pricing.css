@@ -1,0 +1,228 @@
+:root {  
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --yelorange: rgb(255, 191, 0);
+    --orange: rgb(255, 170, 51);
+    --yellow: rgb(255, 235, 16);
+}
+
+header {
+    background-image: url("../assets/heroHeader1.webp");
+}
+
+main {
+    background-color: var(--color);
+    color: var(--primary);
+}
+
+h1#bigSectionTitle {
+    font-size: 4rem;
+    text-align: center;
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+}
+  
+@keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+}
+  
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+}
+  
+h1 > .magic {
+    display: inline-block;
+    position: relative;
+    margin: 0 1%;
+}
+  
+h1 > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+}
+
+h1 > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+}
+  
+h1#bigSectionTitle > .magic > .magic-star > svg > path {
+    fill: var(--purple);
+}
+
+h1#titleOptionsSection > .magic > .magic-star > svg > path {
+    fill: var(--yelorange);
+}
+
+h1#bigSectionTitle > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}  
+
+h1#titleOptionsSection > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--yelorange),
+      var(--orange),
+      var(--yellow),
+      var(--yelorange)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}  
+
+
+section#plans {
+    display: flex;
+    max-width: 90vw;
+    margin: 0 auto;
+    overflow-x: scroll;
+    gap: 2vw;
+}
+
+section#plans div.plan {
+    background-color: var(--grey);
+    padding: 1%;
+    border-radius: 10px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#plans div.plan h3.titlePlan {
+    font-size: 140%;
+}
+
+section#plans div.plan p.subTitlePlan {
+    margin: 1vw auto 3vw;
+}
+
+section#plans div.plan p.planPrice {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+section#plans div.plan p.planPrice span.subsign {
+    font-size: 70%;
+    color: var(--colorSec);
+    font-weight: bolder;
+}
+
+section#plans div.plan button.blackCTA {
+    background-color: var(--secondary);
+    color: var(--color);
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1vw 0;
+}
+
+section#plansTable {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+div.line {
+    padding: 1vw 0;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+div.line:nth-of-type(1) {
+    border-top: 2px solid var(--tertiary);
+}
+
+div.line {
+    border-bottom: 2px solid var(--grey);
+}
+
+div.line:last-of-type {
+    border-bottom: 2px solid var(--tertiary);
+}
+
+div.line div.categoryContainer {
+    width: 20vw;
+}
+
+div.line div.categoryContainer p.headerCategory {
+    font-weight: bold;
+}
+
+h1#titleOptionsSection {
+    font-size: 3.5rem;
+    text-align: center;
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section#optionsTable {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+section#optionsTable div.line div.categoryContainer.contentCategory {
+    width: 42vw;
+    color: var(--colorTer);
+}

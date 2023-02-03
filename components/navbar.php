@@ -6,7 +6,7 @@
     <ul class='listNavItems'>
         <li class='navItem linkNav' id="index">Home</li>
         <li class='navItem linkNav' id="about">A propos</li>
-        <li class='navItem linkNav' id="prices">Tarifs</li>
+        <li class='navItem linkNav' id="pricing">Offres</li>
         <button class="cta linkNav" id="appointment">Prendre RDV</button>
     </ul>
 </nav>

@@ -2,9 +2,11 @@
     --primary: #000;
     --secondary: #0E0E0E;
     --tertiary: #262626;
+    --grey: #EEF1F6;
     
     --color: #fff;
     --colorSec: #9c9c9c;
+    --colorTer: #5e5e5e;
     --purple: #791DDC;
     --blue: #1f8fff;
 }
@@ -22,6 +24,11 @@ body {
     color: var(--color);
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 div#transition {
