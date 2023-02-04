@@ -1,0 +1,45 @@
+header {
+    background-image: url("../assets/heroHeader5.webp");
+}
+
+div#buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#buttonsContainer button {
+    min-width: 15vw;
+}
+
+div#opinions {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div#opinions div.opinion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px var(--tertiary);
+    border-radius: 5px;
+    padding: 2%;
+    gap: 1vw;
+}
+
+div#opinions div.opinion div.opinionContent div.username {
+    font-size: 130%;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+div#opinions div.opinion div.opinionContent div.message {
+    font-size: 100%;
+}
+
+div#opinions div.opinion div.buttonsOpinion button {
+    padding: 1vw 2vw;
+}

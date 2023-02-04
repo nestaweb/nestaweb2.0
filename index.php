@@ -10,9 +10,10 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title>Nestaweb</title>
-
+        <link rel="shortcut icon" href="./assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='./css/default.css'>
         <link rel='stylesheet' href='./css/index.css'>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'self'; child-src 'none';">
     </head>
     <body>
         <?php include_once "./components/transition.php" ?>
@@ -67,7 +68,19 @@
                 </div>
             </section>
             <button id="seeMorePortfolios" class="cta secondary portfolioCTA">En voir plus</button>
-            <section id="opinions"></section>
+            <section id="opinions">
+                <?php foreach ($opinions as $opinion) { ?>
+                    <?php if ($opinion["verified"] == 1) { ?>
+                        <div class="opinion" id="<?php echo "opinion" . $opinion["id"]?>">
+                            <div class="opinionContent">
+                                <div class="username"><?php echo $opinion["username"] ?></div>
+                                <div class="message"><?php echo $opinion["message"] ?></div>
+                                <div class="note"><?php echo $opinion["note"] ?></div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                <?php }?>
+            </section>
         </main>
         <footer>
             
