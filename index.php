@@ -21,7 +21,7 @@
             <div id="heroContainer">
                 <h1 id="heroTitle">Nestaweb,<br>de l'Art au Code</h1>
                 <p class="subtitle headerSubtitle">Étudiant à l'école 42 angoulême. Développeur web indépendant<br> depuis plus de 2 ans. Reconnu à travers +10 projets.</p>
-                <button id="appointment" class="heroCTA ctaNav cta linkNav">Prendre RDV</button>
+                <button id="pricing" class="heroCTA ctaNav cta linkNav">Voir mes offres</button>
             </div>
             <button id="goToMain"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 29 13.8 18.8l.8-.8 9.4 9.4 9.4-9.4.8.8Z"/></svg></button>
         </header>

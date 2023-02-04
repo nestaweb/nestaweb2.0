@@ -6,6 +6,6 @@
         <li class='navItem linkNav' id="index">Home</li>
         <li class='navItem linkNav' id="about">A propos</li>
         <li class='navItem linkNav' id="pricing">Offres</li>
-        <button class="cta ctaNav linkNav" id="appointment">Prendre RDV</button>
+        <button class="cta ctaNav linkNav" id="appointment">Contact</button>
     </ul>
 </nav>
