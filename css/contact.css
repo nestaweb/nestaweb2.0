@@ -1,0 +1,71 @@
+header {
+    background-image: url("../assets/heroHeader4.webp");
+}
+
+h2#mainTitle {
+    font-size: 4rem;
+    text-align: center;
+}
+
+form#getInTouch {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+    gap: 1.5vw;
+}
+
+form#getInTouch div.inputGetInTouch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+form#getInTouch div.inputGetInTouch label {
+    font-size: 130%;
+}
+
+form#getInTouch div.inputGetInTouch input {
+    border: none;
+    background-color: var(--color);
+    color: var(--primary);
+    outline: none;
+    padding: 0.5vw 1vw;
+    font-size: 100%;
+}
+
+form#getInTouch div.inputGetInTouch textarea {
+    border: none;
+    background-color: var(--color);
+    color: var(--primary);
+    outline: none;
+    padding: 0.5vw 1vw;
+    font-size: 100%;
+    width: 100%;
+    height: 204px;
+}
+
+button#sendForm {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    gap: 1vw;
+}
+
+button#sendForm svg {
+    fill: var(--color);
+    width: 30px;
+    height: 30px;
+    transition: fill 0.3s ease-in-out;
+}
+
+button#sendForm svg path {
+    transform: scale(0.6);
+}
+
+button#sendForm:hover svg {
+    fill: var(--primary);
+}
