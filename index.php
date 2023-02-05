@@ -2,6 +2,7 @@
     include_once "./backend/db_functions.php";
 
     $pdo = get_pdo("./");
+    $opinions = get_opinions($pdo);
 ?>
 <!DOCTYPE html>
 <html lang='fr'>
@@ -9,7 +10,7 @@
         <meta charset='UTF-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Nestaweb</title>
+        <title>nestaweb</title>
         <link rel="shortcut icon" href="./assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='./css/default.css'>
         <link rel='stylesheet' href='./css/index.css'>
@@ -68,23 +69,52 @@
                 </div>
             </section>
             <button id="seeMorePortfolios" class="cta secondary portfolioCTA">En voir plus</button>
-            <section id="opinions">
-                <?php foreach ($opinions as $opinion) { ?>
-                    <?php if ($opinion["verified"] == 1) { ?>
-                        <div class="opinion" id="<?php echo "opinion" . $opinion["id"]?>">
-                            <div class="opinionContent">
-                                <div class="username"><?php echo $opinion["username"] ?></div>
-                                <div class="message"><?php echo $opinion["message"] ?></div>
-                                <div class="note"><?php echo $opinion["note"] ?></div>
-                            </div>
-                        </div>
-                    <?php } ?>
-                <?php }?>
-            </section>
+            <?php if (count($opinions) > 0) {?>
+                <section id="opinions">
+                    <h1 id="titleOpinionSection">Avis</h1>
+                    <div class="opinionsContainer primaryContainer">
+                        <?php foreach ($opinions as $opinion) { ?>
+                            <?php if ($opinion["verified"] == 1) { ?>
+                                <div class="opinion" id="<?php echo "opinion" . $opinion["id"]?>">
+                                    <div class="username"><?php echo $opinion["username"] ?></div>
+                                    <div class="message"><?php echo $opinion["message"] ?></div>
+                                    <div class="note">
+                                        <?php for ($i=1; $i < 6; $i++) {
+                                            if ($i <= $opinion["note"]) {
+                                                echo '<svg class="yellow" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 36.55-9.3 5.6q-.4.25-.85.225-.45-.025-.8-.275-.35-.25-.525-.65-.175-.4-.075-.9l2.45-10.6-8.2-7.15q-.4-.35-.475-.775-.075-.425.025-.825.1-.4.45-.675t.85-.325l10.85-.95 4.2-10q.2-.45.6-.675.4-.225.8-.225t.8.225q.4.225.6.675l4.2 10 10.85.95q.5.05.85.325t.45.675q.1.4.025.825-.075.425-.475.775l-8.2 7.15 2.45 10.6q.1.5-.075.9t-.525.65q-.35.25-.8.275-.45.025-.85-.225Z"/></svg>';
+                                            }else {
+                                                echo '<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m16.15 37.75 7.85-4.7 7.85 4.75-2.1-8.9 6.9-6-9.1-.8L24 13.7l-3.55 8.35-9.1.8 6.9 6Zm7.85-1.2-9.3 5.6q-.4.25-.85.225-.45-.025-.8-.275-.35-.25-.525-.65-.175-.4-.075-.9l2.45-10.6-8.2-7.15q-.4-.35-.475-.775-.075-.425.025-.825.1-.4.45-.675t.85-.325l10.85-.95 4.2-10q.2-.45.6-.675.4-.225.8-.225t.8.225q.4.225.6.675l4.2 10 10.85.95q.5.05.85.325t.45.675q.1.4.025.825-.075.425-.475.775l-8.2 7.15 2.45 10.6q.1.5-.075.9t-.525.65q-.35.25-.8.275-.45.025-.85-.225Zm0-10.3Z"/></svg>';
+                                            }
+                                        } ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php }?>
+                    </div>
+                    <div class="opinionsContainer secondaryContainer">
+                        <?php foreach ($opinions as $opinion) { ?>
+                            <?php if ($opinion["verified"] == 1) { ?>
+                                <div class="opinion" id="<?php echo "opinion" . $opinion["id"]?>">
+                                    <div class="username"><?php echo $opinion["username"] ?></div>
+                                    <div class="message"><?php echo $opinion["message"] ?></div>
+                                    <div class="note">
+                                        <?php 
+                                        for ($i=1; $i < 6; $i++) {
+                                            if ($i <= $opinion["note"]) {
+                                                echo '<svg class="yellow" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 36.55-9.3 5.6q-.4.25-.85.225-.45-.025-.8-.275-.35-.25-.525-.65-.175-.4-.075-.9l2.45-10.6-8.2-7.15q-.4-.35-.475-.775-.075-.425.025-.825.1-.4.45-.675t.85-.325l10.85-.95 4.2-10q.2-.45.6-.675.4-.225.8-.225t.8.225q.4.225.6.675l4.2 10 10.85.95q.5.05.85.325t.45.675q.1.4.025.825-.075.425-.475.775l-8.2 7.15 2.45 10.6q.1.5-.075.9t-.525.65q-.35.25-.8.275-.45.025-.85-.225Z"/></svg>';
+                                            }else {
+                                                echo '<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m16.15 37.75 7.85-4.7 7.85 4.75-2.1-8.9 6.9-6-9.1-.8L24 13.7l-3.55 8.35-9.1.8 6.9 6Zm7.85-1.2-9.3 5.6q-.4.25-.85.225-.45-.025-.8-.275-.35-.25-.525-.65-.175-.4-.075-.9l2.45-10.6-8.2-7.15q-.4-.35-.475-.775-.075-.425.025-.825.1-.4.45-.675t.85-.325l10.85-.95 4.2-10q.2-.45.6-.675.4-.225.8-.225t.8.225q.4.225.6.675l4.2 10 10.85.95q.5.05.85.325t.45.675q.1.4.025.825-.075.425-.475.775l-8.2 7.15 2.45 10.6q.1.5-.075.9t-.525.65q-.35.25-.8.275-.45.025-.85-.225Zm0-10.3Z"/></svg>';
+                                            }
+                                        } ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php }?>
+                    </div>
+                </section>
+            <?php } ?>
         </main>
-        <footer>
-            
-        </footer>
+        <?php include_once "./components/footer.php" ?>
         <script src='./js/app.js'></script>
         <script src='./js/nav.js'></script>
     </body>

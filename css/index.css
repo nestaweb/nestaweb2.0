@@ -131,3 +131,92 @@ button.portfolioCTA {
     display: flex;
     margin: 0 auto;
 }
+
+section#opinions {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    position: relative;
+    height: 55vh;
+}
+
+h1#titleOpinionSection {
+    font-size: 4rem;
+    text-align: center;
+}
+
+div.opinionsContainer {
+    display: flex;
+    width: 95vw;
+    margin: 15vh auto;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.opinionsContainer.primaryContainer {
+    animation: primary 15s linear infinite;
+}
+
+div.opinionsContainer.secondaryContainer {
+    animation: secondary 15s linear infinite;
+}
+
+div.opinionsContainer div.opinion {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    min-width: 20vw;
+    width: 20vw;
+    max-width: 20vw;
+    background-color: var(--tertiary);
+    padding: 1%;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--colorSec);
+}
+
+div.opinionsContainer div.opinion div.username {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+div.opinionsContainer div.opinion div.message {
+    text-align: center;
+    font-size: 110%;
+}
+
+div.opinionsContainer div.opinion div.note {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.opinionsContainer div.opinion div.note svg {
+    fill: var(--colorSec);
+}
+div.opinionsContainer div.opinion div.note svg.yellow path {
+    fill: rgb(255, 217, 0);
+}
+
+@keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }

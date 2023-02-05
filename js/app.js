@@ -88,3 +88,23 @@ networks.forEach(network => {
     }
   })
 });
+
+let opinionsContainer = Array.from(document.querySelectorAll(".opinionsContainer"));
+
+if (opinionsContainer) {
+  opinionsContainer.forEach(opinionContainer => {
+    opinionContainer.addEventListener("mouseover", function() {
+      opinionsContainer.forEach(opinionContainer => {
+        opinionContainer.style.animationPlayState = "paused";
+        console.log("there");
+      });
+    })
+
+    opinionContainer.addEventListener("mouseleave", function() {
+      opinionsContainer.forEach(opinionContainer => {
+        opinionContainer.style.animationPlayState = "running";
+        console.log("there");
+      });
+    })
+  });
+}
