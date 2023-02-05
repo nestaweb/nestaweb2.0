@@ -49,10 +49,7 @@
                     <?php } ?>
                 <?php }?>
             </div>
-        </main>
-        <footer>
-            
-        </footer>
+        </main><?php include_once "./components/footer.php" ?>
         <script src='../js/admin.js'></script>
         <script src='../js/app.js'></script>
         <script src='../js/navAdmin.js'></script>

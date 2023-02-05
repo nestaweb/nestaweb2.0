@@ -36,10 +36,7 @@
                 <button class="cta secondary linkNavAdmin" id="addTemplate">Ajouter un template</button>
                 <button class="cta secondary linkNavAdmin" id="changeLinks">Change links</button>
             </div>
-        </main>
-        <footer>
-            
-        </footer>
+        </main><?php include_once "../components/footer.php" ?>
         <script src='../js/app.js'></script>
         <script src='../js/navAdmin.js'></script>
     </body>

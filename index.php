@@ -113,8 +113,8 @@
                     </div>
                 </section>
             <?php } ?>
+            <?php include_once "./components/footer.php" ?>
         </main>
-        <?php include_once "./components/footer.php" ?>
         <script src='./js/app.js'></script>
         <script src='./js/nav.js'></script>
     </body>

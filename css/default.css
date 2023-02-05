@@ -217,3 +217,123 @@ main {
     gap: 5vw;
     padding-bottom: 5%;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+footer div#topFooter {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+    border-bottom: 2px solid var(--colorTer);
+}
+
+footer div#topFooter div.subContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+
+footer div#topFooter div.subContainer.logo {
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer div#topFooter div.subContainer.logo img {
+    width: 10vw;
+}
+
+footer div#topFooter div.subContainer h2 {
+    font-size: 170%;
+    color: var(--colorSec);
+    font-weight: lighter;
+    margin-bottom: 2vh;
+}
+
+ul.lstEl {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 110%;
+}
+
+ul.lstEl li {
+    cursor: pointer;
+    background: linear-gradient(to left, #fff, #fff);
+    background-position: 0% 100%;
+    background-size: 0% 5%;
+    background-repeat: no-repeat;
+    width: fit-content;
+    white-space: nowrap;
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.lstEl li:hover {
+    background-size: 100% 5%;
+}
+
+footer div#bottomFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+div.networksFooter {
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vh;
+}
+
+div.networkFooter {
+    background-color: var(--tertiary);
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+}
+
+div.networkFooter svg {
+    fill: var(--color);
+    transform: scale(0.5);
+    transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+}
+
+div.networkFooter:hover {
+    background-color: var(--color);
+}
+
+div.networkFooter:hover svg {
+    fill: var(--tertiary);
+}
+
+button.sendOpinion {
+    font-size: 80%;
+    padding: 0.5vw 1.5vw;
+}
+
+div.inputOpinion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.inputOpinion input {
+    border: none;
+    background-color: var(--color);
+    color: var(--primary);
+    outline: none;
+    padding: 0.5vw;
+    font-size: 100%;
+}

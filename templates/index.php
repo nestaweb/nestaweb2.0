@@ -28,10 +28,7 @@
             <button class="cta secondary linkNavAdmin" id="manageOpinion">Avis</button>
             <button class="cta secondary linkNavAdmin" id="manageWebsite">Modifier le site</button>
             <button class="cta secondary linkNavAdmin" id="addTemplate">Ajouter un template</button>
-        </main>
-        <footer>
-            
-        </footer>
+        </main><?php include_once "./components/footer.php" ?>
         <script src='../js/app.js'></script>
         <script src='../js/nav.js'></script>
     </body>

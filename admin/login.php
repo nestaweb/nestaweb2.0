@@ -56,10 +56,7 @@
                 <h1 id="heroTitle">Login</h1>
             </div>
             <button id="goToMain"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 29 13.8 18.8l.8-.8 9.4 9.4 9.4-9.4.8.8Z"/></svg></button>
-        </header>
-        <footer>
-            
-        </footer>
+        </header><?php include_once "../components/footer.php" ?>
         <script src='../js/app.js'></script>
         <script src='../js/nav.js'></script>
     </body>
