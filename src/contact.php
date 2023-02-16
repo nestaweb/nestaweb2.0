@@ -9,7 +9,7 @@
         <meta charset='UTF-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>nestaweb • Contact</title>
+        <title>Nestaweb • Contact</title>
         <link rel="shortcut icon" href="../assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='../css/default.css'>
         <link rel='stylesheet' href='../css/contact.css'>
@@ -28,15 +28,15 @@
             <h2 id="mainTitle">Restons en contact !</h2>
             <form action="../backend/sendMessage.php" method="post" id="getInTouch">
                 <div class="inputGetInTouch">
-                    <label for="clientName">Votre nom</label>
+                    <label for="clientName">Nom / Prénom</label>
                     <input type="text" name="clientName" id="clientName" placeholder="John Doe">
                 </div>
                 <div class="inputGetInTouch">
-                    <label for="clientEmail">Votre e-mail</label>
+                    <label for="clientEmail">E-mail</label>
                     <input type="email" name="clientEmail" id="clientEmail" placeholder="exemple@gmail.com">
                 </div>
                 <div class="inputGetInTouch">
-                    <label for="message">Votre message</label>
+                    <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Parlez moi de votre projet"></textarea>
                 </div>
                 <button id="sendForm" class="cta secondary">Envoyer <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z"/></svg></button>

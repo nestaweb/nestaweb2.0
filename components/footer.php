@@ -27,11 +27,7 @@
             </div>
         </div>
         <div class="subContainer inputOpinion">
-            <h2 class="titleSubContainer">Avis</h1>
-            <input type="text" class="usernameInputOpinion" placeholder="Nom / prénom">
-            <input type="text" class="messageInputOpinion" placeholder="Votre message ici">
-            <input type="range" value="0" step="1" min="0" max="5">
-            <button class="sendOpinion cta">Soumettre</button>
+            <button class="sendOpinion secondary cta">Laisser un avis</button>
         </div>
     </div>
     <div id="bottomFooter">

@@ -10,7 +10,7 @@
         <meta charset='UTF-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>nestaweb</title>
+        <title>Nestaweb</title>
         <link rel="shortcut icon" href="./assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='./css/default.css'>
         <link rel='stylesheet' href='./css/index.css'>
@@ -55,20 +55,20 @@
             <h1 id="titleSectionPortfolios">Mes travaux</h1>
             <section id="portfolios">
                 <div id="portfoliosWebsitesName">
-                    <div class="portfolioEx" id="perso">CV et Personnel</div>
-                    <div class="portfolioEx" id="market">E-commerce</div>
-                    <div class="portfolioEx" id="gallery">Galerie</div>
-                    <div class="portfolioEx" id="blog">Blog</div>
-                    <div class="portfolioEx" id="services">Services</div>
-                    <div class="portfolioEx" id="restaurant">Restaurant</div>
-                    <div class="portfolioEx" id="localCompany">Entreprise locale</div>
+                    <div class="portfolioEx" id="0">CV et Personnel</div>
+                    <div class="portfolioEx" id="1">E-commerce</div>
+                    <div class="portfolioEx" id="2">Portfolio</div>
+                    <div class="portfolioEx" id="3">Blog</div>
+                    <div class="portfolioEx" id="4">Services</div>
+                    <div class="portfolioEx" id="6">Restaurant</div>
+                    <div class="portfolioEx" id="5">Entreprise locale</div>
                 </div>
                 <div id="portfoliosWebsiteImg">
                     <div id="imgWebsiteExample"></div>
                     <div id="transitionPortfolioImg"></div>
                 </div>
             </section>
-            <button id="seeMorePortfolios" class="cta secondary portfolioCTA">En voir plus</button>
+            <button class="cta secondary portfolioCTA linkNav" id="../templates/index">En voir plus</button>
             <?php if (count($opinions) > 0) {?>
                 <section id="opinions">
                     <h1 id="titleOpinionSection">Avis</h1>

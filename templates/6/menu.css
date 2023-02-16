@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+    /* gap: 10%; */
+    background-image: url("./res/heroMenu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+button.btnPrimary:hover {
+    transform: scale(1.02);
+}
+button.btnPrimary {
+    min-height: 20vh;
+}
+button.btnPrimary:hover {
+    box-shadow: 0px 0px 10px 2px var(--secondary-hover);
+}
+section.sectionMenu {
+    padding: 2%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+div.dishe {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 0 auto 2%;
+}
+div.dishe div.topInfosDishe {
+    display: flex;
+    justify-content: space-between;
+}
+p.nameDishe {
+    font-weight: bold;
+    font-size: 120%;
+}
+div.headerSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+div.headerSection div.sideTransitionBar {
+    height: 5px;
+    background-color: var(--secondary);
+    width: 20vw;
+}
+span.firstLetter {
+    color: var(--secondary-hover);
+}
+fieldset.advanceSearch {
+    display: flex;
+    font-size: 130%;
+    margin: 4% auto;
+    width: 80vw;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary);
+    padding: 2%;
+}
+fieldset.advanceSearch legend {
+    padding: 0 2%;
+    font-weight: bold;
+}
+fieldset.advanceSearch select {
+    outline: none;
+    font-size: 80%;
+}
+p.errorMessageNoDishes {
+    text-align: center;
+    font-weight: bold;
+    padding: 2%;
+    font-size: 130%;
+}

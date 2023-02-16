@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picture me</title>
+
+        <link rel="stylesheet" href="./default.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body onload="load()">
+        <header>
+            <h1 class="heroTitle">From an idea to an experience</h1>
+            <button class="cta" onclick="start()">Discover</button>
+            <p class="scrollDown notVisible">Scroll Down</p>
+        </header>
+        <main class="notVisible">
+            <div class="gallery">
+                <div class="galleryColumn gallery0"></div>
+                
+                <div class="galleryColumn gallery1"></div>
+                
+                <div class="galleryColumn gallery2"></div>
+                
+                <div class="galleryColumn gallery3"></div>
+            </div>
+        </main>
+        <script src="./data.js"></script>
+        <script src="./main.js"></script>
+        <script src="./intersectionObserver.js"></script>
+    </body>
+</html>

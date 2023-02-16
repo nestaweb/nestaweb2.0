@@ -26,6 +26,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    background-color: #000000b8;
+    color: var(--color);
+}
+
 .hidden {
     opacity: 0;
     visibility: hidden;
@@ -320,13 +325,14 @@ div.networkFooter:hover svg {
 
 button.sendOpinion {
     font-size: 80%;
-    padding: 0.5vw 1.5vw;
+    padding: 1vw 3vw;
 }
 
 div.inputOpinion {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 div.inputOpinion input {
