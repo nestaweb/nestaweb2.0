@@ -2,29 +2,49 @@ let navLinks = Array.from(document.querySelectorAll(".linkNav"));
 
 navLinks.forEach(navLink => {
     navLink.addEventListener("click", function(e){
-        id = e.srcElement.id;
+        id = e.target.id;
         if (id == "42") {
             window.open("https://42angouleme.fr/", "_blank");
             return (1);
         }
-        if ((window.location.href).split("/")[(window.location.href).split("/").length - 2] == "src" && id != "index") {
-            path = "./";
-        } else if ((window.location.href).split("/")[(window.location.href).split("/").length - 2] == "src" && id == "index") {
-            path = "../";
-        } else if ((window.location.href).split("/")[(window.location.href).split("/").length - 2] != "src" && id != "index") {
-            path = "./src/";
-        } else if ((window.location.href).split("/")[(window.location.href).split("/").length - 2] != "src" && id == "index") {
-            path = "./";
-        }
         inTransition();
         setTimeout(() => {
-            window.location.href = path + navLink.id + ".php";
+            path = get_path()
+            window.location.href = path + "components/plane.php?page=" + navLink.id;
         }, 1000);
     });
 });
 
+function get_path() {
+    path = "./";
+    hrefPath = (window.location.href).split('/');
+    originPath = (window.location.origin).split('/');
+  
+    if (!hrefPath[hrefPath.length - 1]) {
+        hrefPath.pop();
+    }
+  
+    while (verifPath(hrefPath, originPath) == 0) {
+        path += "../";
+        hrefPath.pop();
+    }
+    return (path);
+}
+
+function verifPath(hrefPath, originPath) {
+    i = 0;
+    find = 1;
+    while (i < hrefPath.length) {
+        if (hrefPath[i] != originPath[i])
+            find = 0;
+        i++;
+    }
+    return (find);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
+        getContent();
         outTransition();
     }, 300);
 });

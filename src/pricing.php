@@ -63,7 +63,7 @@
                     </div>
                     <div class="bottomPlan">
                         <p class="planPrice"><span class="subsign"><</span> 415 €</p>
-                        <button class="blackCTA linkNav" id="pricing">commander</button>
+                        <button class="blackCTA linkNav" id="contact">commander</button>
                     </div>
                 </div>
                 <div class="plan">
@@ -73,7 +73,7 @@
                     </div>
                     <div class="bottomPlan">
                         <p class="planPrice"><span class="subsign"><</span> 750 €</p>
-                        <button class="blackCTA linkNav" id="pricing">commander</button>
+                        <button class="blackCTA linkNav" id="contact">commander</button>
                     </div>
                 </div>
                 <div class="plan">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="bottomPlan">
                         <p class="planPrice"><span class="subsign"><</span> 1230 €</p>
-                        <button class="blackCTA linkNav" id="pricing">commander</button>
+                        <button class="blackCTA linkNav" id="contact">commander</button>
                     </div>
                 </div>
             </section>
@@ -204,7 +204,8 @@
                     </div>
                 </div>
             </section>
-        </main><?php include_once "../components/footer.php" ?>
+            <?php include_once "../components/footer.php" ?>
+        </main>
         <script src='../js/app.js'></script>
         <script src='../js/nav.js'></script>
     </body>

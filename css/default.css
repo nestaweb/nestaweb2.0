@@ -227,6 +227,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    margin-top: 5vh;
 }
 
 footer div#topFooter {
@@ -306,13 +307,13 @@ div.networkFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+    transition: all 400ms ease-in-out;
 }
 
 div.networkFooter svg {
     fill: var(--color);
     transform: scale(0.5);
-    transition: all 1000ms cubic-bezier(.43,.07,.1,.98);
+    transition: all 400ms ease-in-out;
 }
 
 div.networkFooter:hover {

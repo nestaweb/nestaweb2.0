@@ -108,3 +108,14 @@ if (opinionsContainer) {
     })
   });
 }
+
+
+function getContent() {
+  gets = Array.from(document.querySelectorAll(".get"));
+
+  gets.forEach(get => {
+    doc = get.id;
+    path = get_path();
+    get.setAttribute("src", path + "assets/" + doc + ".webp"); 
+  });
+}

@@ -68,7 +68,7 @@
                     <div id="transitionPortfolioImg"></div>
                 </div>
             </section>
-            <button class="cta secondary portfolioCTA linkNav" id="../templates/index">En voir plus</button>
+            <button class="cta secondary portfolioCTA linkNav" id="templates">En voir plus</button>
             <?php if (count($opinions) > 0) {?>
                 <section id="opinions">
                     <h1 id="titleOpinionSection">Avis</h1>
