@@ -60,12 +60,10 @@
             <section id="portfolios">
                 <div id="portfoliosWebsitesName">
                     <div class="portfolioEx" id="0">CV et Personnel</div>
-                    <div class="portfolioEx" id="1">E-commerce</div>
-                    <div class="portfolioEx" id="2">Portfolio</div>
-                    <div class="portfolioEx" id="3">Blog</div>
-                    <div class="portfolioEx" id="4">Services</div>
-                    <div class="portfolioEx" id="6">Restaurant</div>
-                    <div class="portfolioEx" id="5">Entreprise locale</div>
+                    <div class="portfolioEx" id="1">Portfolio</div>
+                    <div class="portfolioEx" id="2">Services</div>
+                    <div class="portfolioEx" id="3">Restaurant</div>
+                    <div class="portfolioEx" id="4">Entreprise locale</div>
                 </div>
                 <div id="portfoliosWebsiteImg">
                     <div id="imgWebsiteExample"></div>

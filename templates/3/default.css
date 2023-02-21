@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+:root {
+    --primary: #f0f0f0;
+    --secondary: #FAFAFA;
+    --tertiary: #127CE5;
+
+    --color: #262628;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--color);
+    overflow-x: hidden;
+    /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
+    font-family: 'EB Garamond', serif;
+}
