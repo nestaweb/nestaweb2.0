@@ -344,3 +344,7 @@ div.inputOpinion input {
     padding: 0.5vw;
     font-size: 100%;
 }
+
+iframe.pdf {
+    height: 100vh;
+}

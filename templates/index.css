@@ -28,8 +28,10 @@ div.websiteEx:hover {
 
 div.websiteEx img {
     width: 100%;
+    pointer-events: none;
 }
 
 div.websiteEx div.websiteInfos {
     padding: 3%;
+    pointer-events: none;
 }

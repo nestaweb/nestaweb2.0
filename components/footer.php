@@ -27,10 +27,10 @@
             </div>
         </div>
         <div class="subContainer inputOpinion">
-            <button class="sendOpinion secondary cta linkNav" id="leaveOpinion">Laisser un avis</button>
+            <button class="sendOpinion secondary cta linkNav" id="contact">Prendre contact</button>
         </div>
     </div>
     <div id="bottomFooter">
-        <p class="bottomcp">© 2023 nestaweb.fr   -   All rights reserved</p>
+        <pre class="bottomcp">© 2023 nestaweb.fr   -   All rights reserved   -   <span class="linkNav" id="CGU">CGU</span>   -   <span class="linkNav" id="legalMention">Mentions légales</span></pre>
     </div>
 </footer>

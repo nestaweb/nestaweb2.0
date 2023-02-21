@@ -30,6 +30,16 @@
                 exit();
             }
         }
+        $dir = "../legal/";
+        $srcs = scandir($dir);
+        foreach ($srcs as $src) {
+            $file = explode(".php", $src);
+            if (!empty($file) && $file[0] == $_GET["page"])
+            {
+                header("Location:" . $dir . $_GET["page"] . ".php");
+                exit();
+            }
+        }
     }
 ?>
 <style>
