@@ -120,15 +120,15 @@ function getContent() {
   });
 }
 
-/* -- Glow effect -- */
-
 const blob = document.getElementById("blob");
-
-document.body.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
+if (blob) {
+  document.body.onpointermove = event => { 
+    const { clientX, clientY } = event;
+    
+    blob.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 3000, fill: "forwards" });
+  }
 }
+

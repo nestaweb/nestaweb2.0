@@ -41,6 +41,8 @@
             }
         }
     }
+    header("Location:../../errors/404.php");
+    exit();
 ?>
 <style>
     <?php include_once "../css/default.css" ?> 
