@@ -232,6 +232,11 @@ main h1 {
     z-index: 10;
 }
 
+main button {
+    z-index: 10;
+}
+
+
 main section:first-of-type {
     margin-top: 5vh;
 }

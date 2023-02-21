@@ -1,0 +1,118 @@
+@media screen and (max-width: 800px) {
+
+    /* ########## Components ########## */
+
+    div#transition {
+        font-size: 2rem;
+    }
+
+    footer div#topFooter {
+        flex-direction: column;
+    }
+
+    footer div#topFooter div.subContainer {
+        margin-top: 5vh;
+    }
+
+    footer div#topFooter div.subContainer ul.lstEl li {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer div#topFooter div.subContainer.logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div#topFooter div.networkFooter {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    footer div#topFooter div.inputOpinion button.sendOpinion {
+        padding: 2vw 4vw;
+    }
+
+    footer div#bottomFooter pre {
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: break-spaces;
+        text-align: center;
+        width: 90%;
+    }
+
+    /* ########## Header ########## */
+
+    header div#heroContainer h1#heroTitle {
+        font-size: 3rem;
+    }
+
+    /* ########## Index ########## */
+
+    button.heroCTA {
+        padding: 2vw 4vw;
+    }
+
+    section.infoSection:nth-of-type(2) {
+        margin-top: 10%;
+    }
+
+    section.infoSection div.textContainer {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    section.infoSection div.textContainer h1.titleTextContainer {
+        font-size: 2rem;
+    }
+
+    section.infoSection div.textContainer div.subTextContainer {
+        font-size: 1rem;
+    }
+
+    section.infoSection div.imgContainer {
+        width: 0;
+    }
+
+    section.infoSection button.cta {
+        padding: 2vw 4vw;
+        margin-top: 2%;
+    }
+
+    h1#titleSectionPortfolios {
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section#portfolios {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    section#portfolios div#portfoliosWebsitesName {
+        width: 90%;
+    }
+
+    section#portfolios div#portfoliosWebsitesName div.portfolioEx {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    div#portfoliosWebsiteImg {
+        width: 90%;
+        height: 35vh;
+    }
+
+    button.portfolioCTA {
+        padding: 2vw 4vw;
+    }
+}

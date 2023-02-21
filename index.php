@@ -14,6 +14,7 @@
         <link rel="shortcut icon" href="./assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='./css/default.css'>
         <link rel='stylesheet' href='./css/index.css'>
+        <link rel='stylesheet' href='./css/responsive.css'>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'self'; child-src 'none';">
     </head>
     <body>
