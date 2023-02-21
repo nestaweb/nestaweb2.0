@@ -295,4 +295,20 @@
     section#optionsTable div.line div.categoryContainer.contentCategory {
         width: 90%;
     }
+
+    /* ########## Contact ########## */
+
+    h2#mainTitle {
+        font-size: 2rem;
+    }
+
+    form#getInTouch {
+        width: 90vw;
+        gap: 2.5vh;
+    }
+
+    form#getInTouch button#sendForm {
+        width: 80%;
+        margin-top: 3vh;
+    }
 }
