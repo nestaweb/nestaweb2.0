@@ -14,12 +14,16 @@
         display: none;
     }
 
+    nav#topNavBar.black div#buttonWrapperNav div {
+        background-color: var(--primary);
+    }
+
     div#wrapperNav {
         display: flex;
         position: fixed;
         width: 100vw;
         overflow-x: hidden;
-        height: 100vh;
+        height: 105vh;
         top: -105vh;
         left: 0;
         z-index: 100000;
@@ -73,8 +77,8 @@
         top: 50%;
         translate: -50% -50%;
         border-radius: 50%;
-        background: linear-gradient(to right, #F6260B, #642894);
-        animation: rotate 20s infinite;
+        background: linear-gradient(to right, #00bbff, #8c00ff);
+        animation: rotate 15s infinite;
         opacity: 0.8;
       }
 
@@ -234,5 +238,61 @@
 
     button.portfolioCTA {
         padding: 2vw 4vw;
+    }
+
+    /* ########## Pricing ########## */
+
+    h1 > .magic {
+        display: flex;
+    }
+
+    h1#bigSectionTitle {
+        font-size: 1.3rem;
+        width: 95vw;
+    }
+
+    span.magic-text {
+        white-space: normal  !important;
+    }
+
+    section#plans {
+        flex-direction: column;
+    }
+
+    section#plans div.plan:first-of-type {
+        margin-top: -5vh;
+    }
+
+    section#plans div.plan {
+        width: 90%;
+        margin: 5vh auto 0;
+        padding: 2%;
+    }
+
+    section#plans div.plan p.planPrice {
+        font-size: 2rem;
+    }
+
+    section#plans div.plan div.bottomPlan button.blackCTA {
+        padding: 2vw 4vw;
+    }
+
+    h1#titleOptionsSection {
+        font-size: 1.3rem;
+        width: 95vw;
+    }
+
+    div.line {
+        flex-direction: column;
+    }
+
+    div.line div.categoryContainer {
+        width: 100%;
+        text-align: center;
+        margin: 3% auto;
+    }
+
+    section#optionsTable div.line div.categoryContainer.contentCategory {
+        width: 90%;
     }
 }
