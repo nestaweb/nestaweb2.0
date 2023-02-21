@@ -61,7 +61,7 @@
 
     div#blurWrapperNav {
         display: flex;
-        backdrop-filter: blur(12vmax);
+        backdrop-filter: blur(20vh);
         height: 100vh;
         width: 100vw;
         align-items: center;
@@ -164,6 +164,10 @@
     }
 
     /* ########## Index ########## */
+
+    /* div#containerBlobBlur div{
+        display: none;
+    } */
 
     button.heroCTA {
         padding: 2vw 4vw;

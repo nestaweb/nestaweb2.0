@@ -281,7 +281,7 @@ div#containerBlobBlur {
     width: 100%;
     position: absolute;
     z-index: 2;
-    backdrop-filter: blur(12vmax);
+    backdrop-filter: blur(20vh);
   }
 
 
