@@ -28,6 +28,10 @@
             <button id="goToMain"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 29 13.8 18.8l.8-.8 9.4 9.4 9.4-9.4.8.8Z"/></svg></button>
         </header>
         <main>
+            <div id="containerBlobBlur">
+                <div id="blob"></div>
+                <div id="blur"></div>
+            </div>
             <section class="infoSection">
                 <div class="textContainer">
                     <h1 class="titleTextContainer">Pourquoi moi ?</h1>

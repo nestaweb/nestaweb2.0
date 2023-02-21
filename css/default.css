@@ -218,7 +218,6 @@ main {
     top: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
     gap: 5vw;
     padding-bottom: 5%;
 }
@@ -347,4 +346,16 @@ div.inputOpinion input {
 
 iframe.pdf {
     height: 100vh;
+}
+
+
+main section {
+    z-index: 10;
+}
+main h1 {
+    z-index: 10;
+}
+
+main section:first-of-type {
+    margin-top: 5vh;
 }
