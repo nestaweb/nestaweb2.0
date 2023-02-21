@@ -6,6 +6,116 @@
         font-size: 2rem;
     }
 
+    nav#topNavBar div#websiteName p {
+        font-size: 130%;
+    }
+
+    nav#topNavBar ul.listNavItems {
+        display: none;
+    }
+
+    div#wrapperNav {
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100vh;
+        top: -105vh;
+        left: 0;
+        z-index: 100000;
+        background-color: var(--primary);
+        align-items: center;
+        justify-content: center;
+        transition: all 1400ms cubic-bezier(0.8, 0.3, 0.4, 1);
+    }
+
+    div#wrapperNav.active {
+        top: 0;
+    }
+
+    div#buttonWrapperNav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vh;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    div#buttonWrapperNav div {
+        height: 0.6px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    div.topBar {
+        width: 10vw;
+    }
+
+    div.middleBar {
+        width: 6vw;
+    }
+
+    div#blurWrapperNav {
+        display: flex;
+        backdrop-filter: blur(12vmax);
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#blobWrapperNav {
+        background-color: white;
+        height: 34vmax;
+        aspect-ratio: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        border-radius: 50%;
+        background: linear-gradient(to right, #F6260B, #642894);
+        animation: rotate 20s infinite;
+        opacity: 0.8;
+      }
+
+    div#closeCross {
+        position: absolute;
+        top: 5vw;
+        right: 5vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+    }
+
+    div#wrapperNav ul#lstWrapperNav {
+        list-style-type: none;
+        text-align: center;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+        position: relative;
+    }
+
+    div#wrapperNav ul#lstWrapperNav li {
+        background: linear-gradient(to left, #fff, #fff);
+        background-position: 0% 100%;
+        background-size: 0% 5%;
+        background-repeat: no-repeat;
+        white-space: nowrap;
+        width: fit-content;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    div#wrapperNav ul#lstWrapperNav li:hover {
+        background-size: 100% 5%;
+    }
+
     footer div#topFooter {
         flex-direction: column;
     }

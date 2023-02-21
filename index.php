@@ -20,6 +20,7 @@
     <body>
         <?php include_once "./components/transition.php" ?>
         <?php include_once "./components/navbar.php" ?>
+        <?php include_once "./components/wrapperNav.php" ?>
         <header>
             <div id="heroContainer">
                 <h1 id="heroTitle">Nestaweb,<br>de l'Art au Code</h1>

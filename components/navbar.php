@@ -8,4 +8,9 @@
         <li class='navItem linkNav' id="pricing">Offres</li>
         <button class="cta ctaNav linkNav" id="contact">Contact</button>
     </ul>
+    <div id="buttonWrapperNav">
+        <div class="topBar"></div>
+        <div class="middleBar"></div>
+        <div class="topBar"></div>
+    </div>
 </nav>

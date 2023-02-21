@@ -66,3 +66,17 @@ if ((window.location.href).split("/")[(window.location.href).split("/").length -
         }
     })
 }
+
+let buttonWrapperNav = document.querySelector("#buttonWrapperNav");
+let closeCross = document.querySelector("#closeCross");
+let wrapperNav = document.querySelector("#wrapperNav");
+
+if (buttonWrapperNav && wrapperNav && closeCross) {
+    buttonWrapperNav.addEventListener("click", function(){
+        wrapperNav.classList.toggle("active");
+    })
+
+    closeCross.addEventListener("click", function(){
+        wrapperNav.classList.toggle("active");
+    })
+}

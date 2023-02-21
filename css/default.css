@@ -63,6 +63,14 @@ span.link {
     cursor: pointer;
 }
 
+div#wrapperNav {
+    display: none;
+}
+
+div#buttonWrapperNav {
+    display: none;
+}
+
 nav#topNavBar {
     position: fixed;
     display: flex;
@@ -228,6 +236,7 @@ footer {
     flex-direction: column;
     width: 100vw;
     margin-top: 5vh;
+    z-index: 10;
 }
 
 footer div#topFooter {
