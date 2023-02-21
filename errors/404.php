@@ -7,11 +7,13 @@
         <title>Nestaweb • CGU</title>
         <link rel="shortcut icon" href="../assets/simpleLogoWhite.webp">
         <link rel='stylesheet' href='../css/default.css'>
+        <link rel='stylesheet' href='../css/responsive.css'>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'self'; child-src 'none'; frame-src 'self'">
     </head>
     <body>
         <?php include_once "../components/transition.php" ?>
         <?php include_once "../components/navbar.php" ?>
+        <?php include_once "../components/wrapperNav.php" ?>
         <header>
             <div id="heroContainer">
                 <h1 id="heroTitle">404 error</h1>

@@ -165,6 +165,15 @@
         padding: 2vw 4vw;
     }
 
+    section.infoSection {
+        flex-direction: column-reverse;
+        gap: 5vh;
+    }
+
+    section.infoSection.reverse {
+        flex-direction: column;
+    }
+
     section.infoSection:nth-of-type(2) {
         margin-top: 10%;
     }
@@ -185,7 +194,8 @@
     }
 
     section.infoSection div.imgContainer {
-        width: 0;
+        width: 250px;
+        height: 250px;
     }
 
     section.infoSection button.cta {

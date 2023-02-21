@@ -44,7 +44,6 @@
                     </div>
                     <button class="cta secondary linkNav" id="about">En savoir plus</button>
                 </div>
-                <div class="imgContainer"></div>
             </section>
             <section class="infoSection reverse">
                 <div class="textContainer">
@@ -56,7 +55,6 @@
                     </div>
                     <button class="cta secondary linkNav" id="42">En savoir plus</button>
                 </div>
-                <div class="imgContainer"></div>
             </section>
             <h1 id="titleSectionPortfolios">Mes travaux</h1>
             <section id="portfolios">
